@@ -1,8 +1,9 @@
 <h2>MODBUS example program with Python.</h2>
 </br>
-It is a example program to show how modbus works with Python.</br>
+This video demonstrates how to control  IO Modules over MODBUS by using a Python program on Raspberry PI connected on the Ethernet cable.</br>
+The same Python program works on Windows or Mac on the same way too.</br>
 <h3>Modules:</h3>
-</br>
+
 Feldbus Coupler Ethernet</br>
 4-channel thermocouple</br>
 Supply module</br>
@@ -11,6 +12,7 @@ Supply module</br>
 End terminal</br>
 connection over USB to Ethernet adapter</br>
 </br>
+
 <img src="https://user-images.githubusercontent.com/36192933/52902026-3a8f2700-320b-11e9-8762-c1f66df4f1be.png" width="256">
 </br>
 
