@@ -1,8 +1,10 @@
-Ethernet - MODBUS - WAGO 750-352 - Example with Node-RED
+<h2>Ethernet - MODBUS - WAGO 750-352 - Example with Node-RED</h2>
+</br>
 You need to set the same IP range like set in the WAGO 750-352 Module.
 See in the manual on https://www.wago.com/
 
-Modules: </br>
+<b>Modules: </b>
+</br>
 Feldbus Coupler Ethernet </br>
 4-channel thermocouple</br> 
 Supply module </br>
