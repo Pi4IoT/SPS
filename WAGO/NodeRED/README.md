@@ -16,4 +16,7 @@ connection over USB to Ethernet adapter </br>
 
 ![nodeRed_2](https://user-images.githubusercontent.com/36192933/55282880-e5881a00-534d-11e9-9bf3-04f12628d9fd.png)
 
-<img src="https://user-images.githubusercontent.com/36192933/52901923-24349b80-320a-11e9-8038-cafc65cf509f.png" width="500">
+<img src="https://user-images.githubusercontent.com/36192933/55282880-e5881a00-534d-11e9-9bf3-04f12628d9fd.png" width="700">
+
+
+<img src="https://user-images.githubusercontent.com/36192933/52901923-24349b80-320a-11e9-8038-cafc65cf509f.png" width="700">
