@@ -18,3 +18,10 @@ connection over USB to Ethernet adapter </br>
 
 
 <img src="https://user-images.githubusercontent.com/36192933/52901923-24349b80-320a-11e9-8038-cafc65cf509f.png" width="700">
+
+
+See the instruction on my YouTube Channel. --> <a href="https://youtu.be/4s56FcxEOWA" target="_blank">
+ <img src="https://user-images.githubusercontent.com/36192933/50377674-d0e70800-0621-11e9-9848-b41b02b2e1ac.png" alt="IMAGE ALT TEXT HERE" width="60" border="10" />
+</a>
+</br>
+</br>
