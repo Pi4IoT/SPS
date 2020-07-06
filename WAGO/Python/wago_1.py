@@ -6,6 +6,11 @@
 #    Feb 11, 2019 03:26:12 PM CET  platform: Windows NT
 
 import sys
+import os
+
+#store current path to find .png  
+currentPath = os.path.dirname(__file__)
+
 
 try:
     import Tkinter as tk
@@ -91,7 +96,7 @@ class Toplevel1:
         self.btnOutput1.configure(foreground="#000000")
         self.btnOutput1.configure(highlightbackground="#d9d9d9")
         self.btnOutput1.configure(highlightcolor="black")
-        self._img1 = tk.PhotoImage(file="./off_slider.png")
+        self._img1 = tk.PhotoImage(file=os.path.join(currentPath, 'off_slider.png'))
         self.btnOutput1.configure(image=self._img1)
         self.btnOutput1.configure(pady="0")
         self.btnOutput1.configure(relief='sunken')
@@ -108,7 +113,7 @@ class Toplevel1:
         self.btnOutput2.configure(foreground="#000000")
         self.btnOutput2.configure(highlightbackground="#d9d9d9")
         self.btnOutput2.configure(highlightcolor="black")
-        self._img2 = tk.PhotoImage(file="./off_slider.png")
+        self._img2 = tk.PhotoImage(file=os.path.join(currentPath, 'off_slider.png'))
         self.btnOutput2.configure(image=self._img2)
         self.btnOutput2.configure(pady="0")
         self.btnOutput2.configure(relief='sunken')
@@ -125,7 +130,7 @@ class Toplevel1:
         self.btnOutput3.configure(foreground="#000000")
         self.btnOutput3.configure(highlightbackground="#d9d9d9")
         self.btnOutput3.configure(highlightcolor="black")
-        self._img3 = tk.PhotoImage(file="./off_slider.png")
+        self._img3 = tk.PhotoImage(file=os.path.join(currentPath, 'off_slider.png'))
         self.btnOutput3.configure(image=self._img3)
         self.btnOutput3.configure(pady="0")
         self.btnOutput3.configure(relief='sunken')
@@ -142,7 +147,7 @@ class Toplevel1:
         self.btnOutput4.configure(foreground="#000000")
         self.btnOutput4.configure(highlightbackground="#d9d9d9")
         self.btnOutput4.configure(highlightcolor="black")
-        self._img4 = tk.PhotoImage(file="./off_slider.png")
+        self._img4 = tk.PhotoImage(file=os.path.join(currentPath, 'off_slider.png'))
         self.btnOutput4.configure(image=self._img4)
         self.btnOutput4.configure(pady="0")
         self.btnOutput4.configure(relief='sunken')
@@ -158,7 +163,7 @@ class Toplevel1:
         self.lblInput1.configure(foreground="#000000")
         self.lblInput1.configure(highlightbackground="#d9d9d9")
         self.lblInput1.configure(highlightcolor="black")
-        self._img5 = tk.PhotoImage(file="./off.png")
+        self._img5 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
         self.lblInput1.configure(image=self._img5)
         self.lblInput1.configure(text='''Label''')
 
@@ -172,7 +177,7 @@ class Toplevel1:
         self.lblInput2.configure(foreground="#000000")
         self.lblInput2.configure(highlightbackground="#d9d9d9")
         self.lblInput2.configure(highlightcolor="black")
-        self._img6 = tk.PhotoImage(file="./off.png")
+        self._img6 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
         self.lblInput2.configure(image=self._img6)
         self.lblInput2.configure(text='''Label''')
 
@@ -186,7 +191,7 @@ class Toplevel1:
         self.lblInput3.configure(foreground="#000000")
         self.lblInput3.configure(highlightbackground="#d9d9d9")
         self.lblInput3.configure(highlightcolor="black")
-        self._img7 = tk.PhotoImage(file="./off.png")
+        self._img7 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
         self.lblInput3.configure(image=self._img7)
         self.lblInput3.configure(text='''Label''')
 
@@ -200,7 +205,7 @@ class Toplevel1:
         self.lblInput4.configure(foreground="#000000")
         self.lblInput4.configure(highlightbackground="#d9d9d9")
         self.lblInput4.configure(highlightcolor="black")
-        self._img8 = tk.PhotoImage(file="./off.png")
+        self._img8 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
         self.lblInput4.configure(image=self._img8)
         self.lblInput4.configure(text='''Label''')
 
@@ -215,7 +220,7 @@ class Toplevel1:
         self.Button1.configure(foreground="#000000")
         self.Button1.configure(highlightbackground="#d9d9d9")
         self.Button1.configure(highlightcolor="black")
-        self._img9 = tk.PhotoImage(file="./exit.png")
+        self._img9 = tk.PhotoImage(file=os.path.join(currentPath, 'exit.png'))
         self.Button1.configure(image=self._img9)
         self.Button1.configure(pady="0")
         self.Button1.configure(relief='sunken')
@@ -618,7 +623,7 @@ class Toplevel1:
         self.LOGO.configure(foreground="#000000")
         self.LOGO.configure(highlightbackground="#f0f0f0")
         self.LOGO.configure(highlightcolor="#646464")
-        self._img10 = tk.PhotoImage(file="./LOGO.png")
+        self._img10 = tk.PhotoImage(file=os.path.join(currentPath, 'LOGO.png'))
         self.LOGO.configure(image=self._img10)
 
 if __name__ == '__main__':

@@ -10,6 +10,12 @@ import itertools as it
 from pymodbus.client.sync import ModbusTcpClient
 import datetime
 
+import os
+
+#store current path to find .png  
+currentPath = os.path.dirname(__file__)
+
+
 try:
     import Tkinter as tk
 except ImportError:
@@ -54,35 +60,35 @@ class WagoData:
 		
 		result = client.read_coils(0,4)
 		if(result.bits[0]):
-			w._img5 = tk.PhotoImage(file="./on.png")
+			w._img5 = tk.PhotoImage(file=os.path.join(currentPath, 'on.png'))
 			w.lblInput1.configure(image=w._img5)
 
 		else:
-			w._img5 = tk.PhotoImage(file="./off.png")
+			w._img5 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
 			w.lblInput1.configure(image=w._img5)
 					
 		if(result.bits[1]):
-			w._img6 = tk.PhotoImage(file="./on.png")
+			w._img6 = tk.PhotoImage(file=os.path.join(currentPath, 'on.png'))
 			w.lblInput2.configure(image=w._img6)
 
 		else:
-			w._img6 = tk.PhotoImage(file="./off.png")
+			w._img6 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
 			w.lblInput2.configure(image=w._img6)
 			
 		if(result.bits[2]):
-			w._img7 = tk.PhotoImage(file="./on.png")
+			w._img7 = tk.PhotoImage(file=os.path.join(currentPath, 'on.png'))
 			w.lblInput3.configure(image=w._img7)
 
 		else:
-			w._img7 = tk.PhotoImage(file="./off.png")
+			w._img7 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
 			w.lblInput3.configure(image=w._img7)
 			
 		if(result.bits[3]):
-			w._img8 = tk.PhotoImage(file="./on.png")
+			w._img8 = tk.PhotoImage(file=os.path.join(currentPath, 'on.png'))
 			w.lblInput4.configure(image=w._img8)
 
 		else:
-			w._img8 = tk.PhotoImage(file="./off.png")
+			w._img8 = tk.PhotoImage(file=os.path.join(currentPath, 'off.png'))
 			w.lblInput4.configure(image=w._img8)
 						
 		root.after(100, self.updateTemp)
@@ -127,8 +133,8 @@ def init(top, gui, *args, **kwargs):
 	w = gui
 	top_level = top
 	root = top
-	w.image_on = tk.PhotoImage(file='on_slider.png')
-	w.image_off = tk.PhotoImage(file='off_slider.png')
+	w.image_on = tk.PhotoImage(file=os.path.join(currentPath, 'on_slider.png'))
+	w.image_off = tk.PhotoImage(file=os.path.join(currentPath, 'off_slider.png'))
 	w.images1 = it.cycle([w.image_off, w.image_on])  
 	w.images2 = it.cycle([w.image_off, w.image_on])
 	w.images3 = it.cycle([w.image_off, w.image_on])
